@@ -1,5 +1,0 @@
-1.SELECT * FROM user;
-2.SELECT * FROM user WHERE firstname = "ali";
-3.SELECT * FROM user WHERE id = 1;
-4.SELECT firstname,lastname,idcart FROM user WHERE age>18;
-........................................................................

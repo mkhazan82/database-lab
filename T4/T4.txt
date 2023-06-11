@@ -1,0 +1,19 @@
+----> keywords - کلید واژه ها
+
+//جستجو پست دارای یک کلیدواژه خاص
+SELECT * FROM posts WHERE keywords LIKE "%test%";
+
+//جستجو پست دارای یکی از چندین کلیدواژه مد نظر
+SELECT * FROM posts WHERE keywords LIKE "%test%" OR keywords LIKE "%test%";
+
+
+
+----> type - نوع
+
+//انتخاب یک نوع خاص
+ $select_posts = $conn->prepare("SELECT * FROM `posts` WHERE category = ? and status = ?");
+ $select_posts->execute([$category, 'active']);
+
+//مرتب سازی به صورت الفبا صعودی یا نزولی
+SELECT * FROM posts ORDER BY type ASC|DESC
+
